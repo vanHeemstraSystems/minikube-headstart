@@ -55,9 +55,10 @@ As per the suggestion above, we will delet the current minikube which has the do
 
 ```
 $ minikube delete
-
-
-
+  Deleting "minikube" in docker ...
+  Deleting container "minikube" ...
+  Removing /Users/willemvanheemstra/.minikube/machines/minikube ...
+  Removed all traces of the "minikube" cluster
 ```
 
 Now try again, for hyperkit:
