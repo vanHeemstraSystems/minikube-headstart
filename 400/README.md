@@ -48,7 +48,3 @@ $ tree ~/.minikube -L 2
 └── proxy-client.key
  13 directories, 19 files
 ```
-
-
-
-More ...
