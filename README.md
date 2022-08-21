@@ -106,14 +106,16 @@ Type ```mk version``` to verify Minikube is correctly installed and functioning:
 
 ```
 $ mk version
-minikube version: v1.10.1
+minikube version: v1.26.1
 ```
 
 Type ```k version --output=yaml``` to verify kubectl is correctly installed and functioning:
 
 ```
 $ k version --output=yaml
-Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.3", GitCommit:"641856db18352033a0d96dbc99153fa3b27298e5", GitTreeState:"clean", BuildDate:"2020-05-20T12:52:00Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"darwin/amd64"}
+Client Version: version.Info{Major:"1", Minor:"24", GitVersion:"v1.24.1", GitCommit:"641856db18352033a0d96dbc99153fa3b27298e5", GitTreeState:"clean", BuildDate:"2020-05-24T12:26:197Z", GoVersion:"go1.18.2", Compiler:"gc", Platform:"darwin/amd64"}
+kustomizeVersion: v4.5.4
+
 The connection to the server localhost:8080 was refused — did you specify the right host or port?
 Unable to connect to the server: dial tcp 192.168.99.100:8443: getsockopt: operation timed out
 ```
@@ -121,4 +123,20 @@ Unable to connect to the server: dial tcp 192.168.99.100:8443: getsockopt: opera
 Do not worry about the error on the last line. There is no cluster running, so kubectl cannot connect to anything. That is expected.
 
 You can explore the available commands and flags for both Minikube and kubectl. I will not go over each command, only the commands I use.
+
+### 400 - Creating the cluster
+The Minikube tool supports multiple versions of Kubernetes. At the time of writing, the latest version is 1.26.1, which is also the default:
+
+
+
+
+
+
+
+
+
+
+
+
+
 
