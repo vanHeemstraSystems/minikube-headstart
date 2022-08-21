@@ -71,7 +71,7 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 
 Check if you have kubectl installed.
 ```
-$ kubectl version --short --output=yaml
+$ kubectl version --output=yaml
 ```
 
 Install kubectl if not already installed, see: https://kubernetes.io/docs/tasks/tools/install-kubectl/
