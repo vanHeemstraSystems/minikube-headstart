@@ -95,24 +95,30 @@ Unfortunately, an error has occured:
 
 Hooray, we have a minikube cluster!
 
-For learning puprpose, lets stop (but **not** delete) the newly created minikube cluster.
+For learning purpose, lets stop (but **not** delete) the newly created minikube cluster.
 
 ```
 $ minikube stop
-
-
-
+  Stopping node "minikube" ...
+  1 node stopped.
 ```
 
-And then start it again:
+And then start it again (not even mentioning the hyperkit):
 
 ```
 $ minikube start
-
-
-
+  minikube v1.26.1 on Darwin 12.0
+  Using the hyperkit driver based on existing profile
+  Starting control plane nodse minikube in cluster minikube
+  Restarting existing hyperkit VM for "minikube" ...
+  Preparing Kubernetes v1.24.3 on Docker 20.10.17 ...
+  Verifying Kubernetes components...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+  Enabled addons: storage-provisioner, default-storageclass
+  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
 
+Excellent, we have learned what happens if we create, delete, create with a flag (here: ```--vm-driver=hyperkit```), stop, and start again without a flag a minikube cluster.
 
 
 
