@@ -45,6 +45,27 @@ Now using the flag to create a minikube cluster using ```hyperkit``` vm driver
 
 ```
 $ minikube start --vm-driver=hyperkit
+  minikube v1.26.1 on Darwin 12.0
+  
+  Exiting due to GUEST_DRIVER_MISMATCH: The existing "minikube" cluster was created using the "docker" driver, which is incompatible with requested "hyperkit" driver.
+  Suggestion: Delete the existing 'minikube' cluster using: 'minikube delete', or start the existing 'minikube' cluster using: 'minikube start --driver=docker'
+```
+
+As per the suggestion above, we will delet the current minikube which has the docker driver.
+
+```
+$ minikube delete
+
+
+
+```
+
+Now try again, for hyperkit:
+
+```
+$ minikube start --vm-driver=hyperkit
+
+```
 
 
 
