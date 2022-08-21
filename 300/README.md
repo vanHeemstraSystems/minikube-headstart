@@ -36,7 +36,11 @@ Ooops, for using minikube with hyperkit (instead of docker, which is the default
 
 ```
 $ minikube stop
+  Stopping node "minikube" ...
+  Powering off "minikube" via SSH ...
+  1 node stopped.
 ```
+
 Now using the flag to create a minikube cluster using ```hyperkit``` vm driver
 
 ```
