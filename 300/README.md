@@ -95,3 +95,25 @@ Unfortunately, an error has occured:
 
 Hooray, we have a minikube cluster!
 
+For learning puprpose, lets stop (but **not** delete) the newly created minikube cluster.
+
+```
+$ minikube stop
+
+
+
+```
+
+And then start it again:
+
+```
+$ minikube start
+
+
+
+```
+
+
+
+
+More ...
