@@ -12,7 +12,18 @@ $ mk start
   Downloading Kubernetes v1.24.3 preload ...
   > preload-images-k8s-v18-v1...: 405.75 MiB / 405.75 MiB 100% 5.58 Mi
   > gcr.io/k8s-minikube/kicbase: 386.61 MiB / 386.61 MiB 100.00% 4.39 MiB p
-  
+  > gcr.io/k8s-minikube/kicbase: 0B [_________________________] ?% ? p/s 2m14s
+  Creating docker container (CPUs=2, Memory=1986MB) 
 
 ```
 
+Ooops, for using minikube with hyperkit (instead of docker, which is the default) we need to add a flag to the start command.
+
+```
+$ minikube stop
+$ minikube start
+
+
+
+
+```
