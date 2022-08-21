@@ -21,7 +21,7 @@ Ooops, for using minikube with hyperkit (instead of docker, which is the default
 
 ```
 $ minikube stop
-$ minikube start
+$ minikube start --vm-driver=hyperkit
 
 
 
