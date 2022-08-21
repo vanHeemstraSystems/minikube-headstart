@@ -3,7 +3,7 @@
 The Minikube tool supports multiple versions of Kubernetes. At the time of writing, the latest version is 1.26.1, which is also the default:
 
 ```
-$ mk start
+$ minikube start
   minikube v1.26.1 on darwin 12.0 (amd64)
   Automatically selected the docker driver. Other choices: hyperkit,parallels, virtualbox, ssh, qemu2 (experimental)
   Using Docker Desktop driver with root privileges
