@@ -18,7 +18,8 @@ $ tree ~/.minikube -L 2
 ├── cache 
 │   ├── images 
 │   ├── iso 
-│   └── v1.15.0 
+│   ├── kic 
+│   └── preloaded-tarball 
 ├── cert.pem 
 ├── certs 
 │   ├── ca-key.pem 
@@ -28,9 +29,13 @@ $ tree ~/.minikube -L 2
 ├── client.crt 
 ├── client.key 
 ├── config 
+│   └── config.json
 ├── files 
 ├── key.pem 
 ├── logs 
+│   ├── audit.json 
+│   └── lastStart.txt 
+├── machine_client.lock
 ├── machines 
 │   ├── minikube 
 │   ├── server-key.pem 
