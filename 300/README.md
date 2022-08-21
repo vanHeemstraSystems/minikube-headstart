@@ -120,6 +120,15 @@ $ minikube start
 
 Excellent, we have learned what happens if we create, delete, create with a flag (here: ```--vm-driver=hyperkit```), stop, and start again without a flag a minikube cluster.
 
+Let us review what Minikube did behind the curtains for you. You will need to do a lot of it when creating a cluster from scratch:
 
+1. Start a VirtualBox VM
+2. Create certificates for the local machine and the VM
+3. Download images
+4. Set up networking between the local machine and the VM
+5. Run the local Kubernetes cluster on the VM
+6. Configure the cluster
+7. Start all the Kubernetes control plane components
+8. Configure kubectl to talk to the cluster
 
 More ...
