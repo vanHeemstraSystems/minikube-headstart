@@ -109,10 +109,10 @@ $ mk version
 minikube version: v1.10.1
 ```
 
-Type k version to verify kubectl is correctly installed and functioning:
+Type ```k version --output=yaml``` to verify kubectl is correctly installed and functioning:
 
 ```
-$ k version
+$ k version --output=yaml
 Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.3", GitCommit:"641856db18352033a0d96dbc99153fa3b27298e5", GitTreeState:"clean", BuildDate:"2020-05-20T12:52:00Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"darwin/amd64"}
 The connection to the server localhost:8080 was refused — did you specify the right host or port?
 Unable to connect to the server: dial tcp 192.168.99.100:8443: getsockopt: operation timed out
