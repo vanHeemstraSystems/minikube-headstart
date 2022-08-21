@@ -9,6 +9,8 @@ See [README.md](./100/README.md)
 
 ## 200 - Requirements
 
+See [README.md](./200/README.md)
+
 ### 100 - Getting ready
 
 There are some prerequisites to install before you can create the cluster itself. These include VirtualBox, the kubectl command-line interface to Kubernetes, and, of course, Minikube itself. Here is a list of the latest versions at the time of writing:
